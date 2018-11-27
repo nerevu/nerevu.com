@@ -1,0 +1,9 @@
+node_modules/
+build/
+bower_components/
+logo.sketch/
+public
+*.log
+*.gz
+!favicon.ico.gz
+data/*.md

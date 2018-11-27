@@ -1,0 +1,117 @@
+path = require 'path'
+
+stamp = Date.now()
+
+checkpoint = (name, start) ->
+  end = Date.now()
+  time = (end - start) / 1000
+  console.log("#{name} +#{time}s")
+  end
+
+_ = require './node_modules/lodash'
+axis = require './node_modules/axis'
+jeet = require './node_modules/jeet'
+Metalsmith = require './node_modules/metalsmith'
+rm = require './node_modules/rimraf'
+
+end = checkpoint 'require base', stamp
+
+fingerprint = require './node_modules/metalsmith-fingerprint-ignore'
+htmlMinifier = require './node_modules/metalsmith-html-minifier'
+mithril = require './node_modules/metalsmith-mithril'
+msIf = require './node_modules/metalsmith-if'
+uglify = require './node_modules/metalsmith-uglify'
+
+end = checkpoint 'require metalsmith plugins', end
+
+blc = require './plugins/blc'
+browserify = require './plugins/browserify'
+cleanCSS = require './plugins/clean-css'
+compress = require './plugins/compress'
+ignore = require './plugins/ignore'
+markdown = require './plugins/markdown'
+preempt = require './plugins/preempt'
+serve = require './plugins/serve'
+stylus = require './plugins/stylus'
+time = require './plugins/time'
+end = checkpoint 'require local plugins', end
+
+config = require './config'
+js = config.paths.js
+
+end = checkpoint 'require rest', end
+
+end = checkpoint 'set config', end
+DIR = __dirname
+
+app = new Metalsmith(DIR)
+  .use time plugin: 'start', start: end
+  .source config.paths.source
+  .destination config.paths.dest
+  .metadata config
+  .use time plugin: 'metadata'
+  .use preempt()
+  .use time plugin: 'preempt'
+  .use ignore()
+  .use time plugin: 'ignore'
+  .use markdown()
+  .use time plugin: 'markdown'
+  .use stylus
+    compress: false
+    use: [axis(), jeet()]
+  .use time plugin: 'stylus'
+  .use browserify destFolder: js
+  .use time plugin: 'browserify'
+  .use fingerprint pattern: ['**/*.css', '**/*.js']
+  .use time plugin: 'fingerprint'
+  .use mithril ext: '.coffee', concurrent: 2
+  .use time plugin: 'mithril'
+  .use blc warn: true
+  .use time plugin: 'blc'
+  .use msIf config.prod, cleanCSS
+    files: "#{config.paths.css}/main*.css"
+    rename: false
+    sourceMap: false
+    cleanCSS: rebase: true
+  .use msIf config.prod, time plugin: 'cleanCSS'
+  .use msIf config.prod, uglify sourceMap: false, nameTemplate: '[name].[ext]'
+  .use msIf config.prod, time plugin: 'uglify'
+  .use msIf config.prod, htmlMinifier()
+  .use msIf config.prod, time plugin: 'htmlMinifier'
+  .use msIf config.prod, compress overwrite: false
+  .use msIf config.prod, time plugin: 'compress'
+
+build = (clean) ->
+  afterProcess = (err, files) ->
+    if err
+      console.log "process error: #{err.message}"
+    else
+      app.write files, (err) ->
+        endTime = (Date.now() - stamp) / 1000
+
+        if err
+          console.log "write error: #{err.message} "
+        else
+          _.keys(files).length
+          console.log "Successfully built #{_.keys(files).length} files"
+        # for filename, data of _files
+        #   console.log "built #{filename}"
+
+        console.log "built site in #{endTime}s "
+
+  if clean
+    rm path.join(app.destination(), '*'), (err) ->
+      if err
+        console.log "rimraf error: #{err.message}"
+      else
+        app.process afterProcess
+  else
+    app.process afterProcess
+
+build true
+
+app
+  .use msIf config.serve, serve
+    gzip: true
+
+  .use msIf config.serve, time plugin: 'serve'
