@@ -3,7 +3,7 @@ prod = mode is 'production'
 
 URLS =
   netlify: 'https://www.nerevu.com'
-  local: 'http://localhost:8080'
+  local: 'http://localhost:3000'
 
 tags = [
   'programming'

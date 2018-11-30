@@ -32,7 +32,6 @@ compress = require './plugins/compress'
 ignore = require './plugins/ignore'
 markdown = require './plugins/markdown'
 preempt = require './plugins/preempt'
-serve = require './plugins/serve'
 stylus = require './plugins/stylus'
 time = require './plugins/time'
 end = checkpoint 'require local plugins', end
@@ -43,6 +42,8 @@ js = config.paths.js
 end = checkpoint 'set config', end
 
 _ = helpers._
+
+Runner = require('./node_modules/metalsmith-start').Runner
 
 app = new Metalsmith(__dirname)
   .use time plugin: 'start', start: end
@@ -60,7 +61,10 @@ app = new Metalsmith(__dirname)
     compress: false
     use: [axis(), jeet()]
   .use time plugin: 'stylus'
-  .use browserify destFolder: js
+  .use browserify
+    destFolder: js
+    plugin: if config.prod then [] else ['watchify']
+    debug: not config.prod
   .use time plugin: 'browserify'
   .use fingerprint pattern: ['**/*.css', '**/*.js']
   .use time plugin: 'fingerprint'
@@ -110,8 +114,8 @@ build = (clean) ->
   else
     app.process afterProcess
 
-build true
-
-app
-  .use msIf config.serve, serve gzip: true
-  .use msIf config.serve, time plugin: 'serve'
+if config.serve
+  r = new Runner(app)
+  r.start()
+else
+  build true

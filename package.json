@@ -1,11 +1,11 @@
 {
-  "name": "nerevu-analytics",
+  "name": "nerevu-group",
   "version": "0.26.0",
   "license": "MIT",
-  "description": "Nerevu Analytics website",
+  "description": "Nerevu Group website",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nerevu/analytics.nerevu.com"
+    "url": "https://github.com/nerevu/www.nerevu.com"
   },
   "engines": {
     "node": ">=8.7.0,<0.0.0"
@@ -35,23 +35,21 @@
     "mithril": "^1.1.6",
     "mithril-node-render": "^2.3.1",
     "moment-timezone": "^0.5.23",
-    "node-static": "^0.7.9",
     "rimraf": "^2.5.4",
     "stylus": "^0.54.5",
     "urijs": "^1.19.1"
   },
   "devDependencies": {
-    "http-status": "^0.2.3",
     "coffeelint": "^1.16.0",
     "metalsmith-clean": "^0.0.0",
     "metalsmith-fingerprint-ignore": "^1.1.2",
     "metalsmith-html-minifier": "^2.1.0",
     "metalsmith-if": "^0.1.1",
     "metalsmith-linkcheck": "^0.2.8",
-    "metalsmith-livereload": "^0.1.0",
     "metalsmith-permalinks": "^2.0.0",
+    "metalsmith-start": "^2.0.1",
     "metalsmith-uglify": "^2.2.0",
     "multimatch": "^2.1.0",
-    "winston": "^2.3.0"
+    "watchify": "^3.11.0"
   }
 }
