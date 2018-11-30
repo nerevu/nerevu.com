@@ -1,0 +1,70 @@
+.meta
+  padding-top $quarter-headspace
+  border-top $border-weight dashed $border-color
+  margin-bottom $half-headspace
+
+article
+  h1
+    margin 0
+
+  .meta
+    padding $quarter-headspace $quarter-gutter
+    margin $half-headspace 0
+    border $border-weight solid $border-color
+    border-radius $border-radius
+    background $alt-background
+    text-align center
+    ul:first-child
+      bold()
+    li
+      overflow hidden
+      text-overflow ellipsis
+    li:not(:last-child)
+      border-right $border-weight solid $border-color
+
+  footer
+    padding $full-headspace 0 0
+    border-top $border-weight solid $border-color
+    margin-top $half-headspace
+
+    .updated
+      col(1/2)
+      vertically-align()
+      text-align center
+      shift(1/4)
+      margin-top 0
+      margin-bottom 0
+
+    .post-nav
+      col(1/4)
+      vertically-align()
+
+    .prev
+      shift(-1/2)
+
+    .next
+      text-align right
+
+    @media print
+      display none
+
+    @media $mobile
+      .updated
+        col(1)
+        unshift(1/4)
+        text-align center
+
+      .post-nav
+        col(1/2)
+
+      .prev
+        unshift(-1/2)
+
+      .next
+        text-align right
+
+    .empty
+      color: $background
+
+    a
+      link($link-color, 'glow')

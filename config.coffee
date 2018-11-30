@@ -2,38 +2,47 @@ mode = process.env.NODE_ENV
 prod = mode is 'production'
 
 URLS =
-  netlify: 'https://analytics.nerevu.com'
+  netlify: 'https://www.nerevu.com'
   local: 'http://localhost:8080'
-  api: if prod then 'blog-subs-api.herokuapp.com' else 'localhost:5000'
 
 tags = [
-  'programming', 'data', 'finance', 'technology',  'travel',
-  'blog', 'python', 'clojure', 'clojurescript', 'javascript', 'mac', 'osx',
-  'linux', 'investing', 'asset allocation', 'travel hacking',
-  'portfolio performance', 'risk', 'web application development',
-  'restful api', 'flask', 'node', 'coffeescript', 'entrepreneurship']
+  'programming'
+  'data'
+  'finance'
+  'technology'
+  'python'
+  'clojure'
+  'clojurescript'
+  'javascript'
+  'investing'
+  'asset allocation'
+  'portfolio performance'
+  'risk'
+  'web application development'
+  'API'
+  'flask'
+  'node'
+  'coffeescript'
+  'entrepreneurship'
+]
 
 module.exports =
   mode: mode
   prod: prod
   serve: process.env.SERVE
   site:
-    name: 'reubano'
-    author: 'Reuben Cummings'
-    email: 'reubano@gmail.com'
-    title: 'Reuben on Data'
-    subtitle: 'musings of a data whisperer'
+    name: 'Nerevu Group'
+    title: 'Nerevu Group, LLC'
     url: URLS[process.env.SITE]
-    api: URLS.api
-    version: '0.0.4'
-
-    description: "I'm Reuben Cummings, an open source enthusiast and " +
-      'Pythonista. I help software companies eliminate inefficiencies and ' +
-      'identify how customers are using their products and services. When' +
-      ' your data starts talking, I’m the one you want listening.'
-
+    version: '0.1.0'
+    description: "Nerevu Group is a data driven holding company with operations in the software, technology, financial services, real estate, and investment sectors."
     tags: tags
     keywords: tags.join ', '
+
+  footer:
+    privacy: 'Privacy'
+    terms: 'Terms'
+    cookies: '🍪'
 
   paths:
     images: 'images'
@@ -46,20 +55,26 @@ module.exports =
 
   laicos:
     facebook:
-      id: 300084520193307
+      href: '//www.facebook.com/nerevu/'
+      user: 'nerevu'
+      userID: 300084520193307
+      title: 'Facebook'
     github:
-      api_token: process.env.GITHUB_ACCOUNT_KEY
-      path: '//github.com/nerevu'
+      href: '//github.com/nerevu'
       user: 'nerevu'
       title: 'GitHub'
     twitter:
-      path: '//twitter.com/nerevu'
-      api_token: process.env.TWITTER_ACCOUNT_KEY
+      href: '//twitter.com/nerevu'
       user: 'nerevu'
       title: 'Twitter'
     linkedin:
-      path: '//www.linkedin.com/showcase/nerevu-analytics'
+      href: '//www.linkedin.com/company/nerevu'
+      user: 'nerevu'
       title: 'LinkedIn'
     rss:
-      path: '//feeds.feedburner.com/nerevu'
+      href: '//feeds.feedburner.com/nerevu'
+      title: 'RSS'
+    envelope:
+      href: '//mailto:info@nerevu.com'
+      user: 'info@nerevu.com'
       title: 'RSS'

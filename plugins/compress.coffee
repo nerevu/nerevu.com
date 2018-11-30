@@ -1,7 +1,6 @@
 zlib = require 'zlib'
 each = require('../node_modules/async').each
 _ = require '../node_modules/lodash'
-moment = require '../node_modules/moment-timezone'
 multimatch = require '../node_modules/multimatch'
 
 DEFAULTS =

@@ -27,20 +27,21 @@
     "browserify": "^13.1.0",
     "coffeeify": "^2.0.1",
     "coffeescript": "^1.11.0",
-    "highlight.js": "^9.13.1",
-    "http-status": "^0.2.3",
     "jeet": "^6.1.2",
     "marked": "^0.4.0",
     "metalsmith": "^2.3.0",
-    "metalsmith-mithril": "^0.1.0",
+    "metalsmith-beautify": "^0.2.0",
+    "metalsmith-mithril": "^0.2.3",
+    "mithril": "^1.1.6",
+    "mithril-node-render": "^2.3.1",
     "moment-timezone": "^0.5.23",
     "node-static": "^0.7.9",
     "rimraf": "^2.5.4",
     "stylus": "^0.54.5",
-    "urijs": "^1.19.1",
-    "winston": "^2.3.0"
+    "urijs": "^1.19.1"
   },
   "devDependencies": {
+    "http-status": "^0.2.3",
     "coffeelint": "^1.16.0",
     "metalsmith-clean": "^0.0.0",
     "metalsmith-fingerprint-ignore": "^1.1.2",
@@ -50,6 +51,7 @@
     "metalsmith-livereload": "^0.1.0",
     "metalsmith-permalinks": "^2.0.0",
     "metalsmith-uglify": "^2.2.0",
-    "multimatch": "^2.1.0"
+    "multimatch": "^2.1.0",
+    "winston": "^2.3.0"
   }
 }

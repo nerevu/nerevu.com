@@ -1,0 +1,51 @@
+.mobile, .tablet, .handheld, .laptop, .desktop, .lapdesk, .hd
+  display-none()
+
+.non-mobile, .non-tablet, .non-handheld, .non-laptop, .non-desktop, .non-lapdesk, .non-hd
+  display-some()
+
+@media $mobile
+  .mobile
+    display-some()
+  .non-mobile
+    display-none()
+
+@media $tablet
+  .tablet
+    display-some()
+  .non-tablet
+    display-none()
+
+@media $handheld
+  .handheld
+    display-some()
+  .non-handheld
+    display-none()
+
+@media $laptop
+  .laptop
+    display-some()
+  .non-laptop
+    display-none()
+  .non-lapdesk
+    display-none()
+
+@media $desktop
+  .desktop
+    display-some()
+  .non-desktop
+    display-none()
+  .non-lapdesk
+    display-none()
+
+@media $lapdesk
+  .lapdesk
+    display-some()
+  .non-lapdesk
+    display-none()
+
+@media $hd
+  .hd
+    display-some()
+  .non-hd
+    display-none()

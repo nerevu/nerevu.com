@@ -90,7 +90,7 @@ module.exports = (options) ->
       process.exit()
 
     server.on 'error', (err) ->
-      if (err.code == 'EADDRINUSE')
+      if (err.code is 'EADDRINUSE')
         log "Address #{host}:#{port} already in use", type: 'error'
         throw err
 

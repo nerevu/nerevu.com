@@ -1,9 +1,15 @@
-m = require('mithril')
+m = require 'mithril'
+Base = require './_components/base'
 
 module.exports =
-  controller: (file, metalsmith, callback) -> callback()
-  view: (controller, file, metalsmith) ->
-    [
-      m 'h1', file.title
-      m 'main', file.contents.toString()
-    ]
+  ctrl: (file, metalsmith) ->
+    if file.subtitle
+      title = "#{file.title} | #{file.subtitle}"
+    else
+      title = file.title
+
+    @attrs = metalsmith._metadata
+    @attrs.content = [m('h1', title), m.trust(file.html)]
+    @
+
+  view: (ctrl, file, metalsmith) -> m Base, ctrl.attrs

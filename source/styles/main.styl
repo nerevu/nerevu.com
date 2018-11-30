@@ -1,0 +1,52 @@
+@import "jeet"
+normalize-css()
+base()
+// edit()
+// debug()
+
+@require '_themes/material-red'
+@require '_themes/extended'
+@require "_variables"
+
+@require "_partials/base"
+@require "_partials/page"
+@require "_partials/footer"
+@require "_partials/navigation"
+@require "_partials/highlight"
+@require "_partials/hamburger"
+@require "_partials/media"
+
+// contrast checks
+check-contrast-ratio(iden, top, bottom)
+  ratio = contrast(top, bottom).ratio
+
+  if ratio < 7
+    warn('----------------')
+    warn(iden)
+    warn('contrast is < 7')
+
+  if ratio > 17
+    warn('----------------')
+    warn('contrast is > 17')
+
+check-contrast-ratio('site', $font-color, $background)
+check-contrast-ratio('button', $button-font-color, $button-color)
+check-contrast-ratio('button-hover', $button-hover-font-color, $button-hover-color)
+check-contrast-ratio('links', $link-color, $background)
+check-contrast-ratio('nav-links', $nav-link-color, $nav-background)
+check-contrast-ratio('visited', $visited-link-color, $background)
+check-contrast-ratio('selected text', $selected-text-color, $text-selection-color)
+check-contrast-ratio('autofill', $autofill-font-color, $autofill-background)
+check-contrast-ratio('nav-active', $nav-active-color, $nav-background)
+
+check-contrast-ratio('alt', $alt-font-color, $alt-background)
+check-contrast-ratio('alt-button', $alt-button-font-color, $alt-button-color)
+check-contrast-ratio('alt-button-hover', $alt-button-font-color, $alt-button-hover-color)
+check-contrast-ratio('alt-links', $alt-link-color, $alt-background)
+check-contrast-ratio('alt-visited', $alt-visited-link-color, $alt-background)
+
+check-contrast-ratio('inverse', $inverse-font-color, $inverse-background)
+check-contrast-ratio('inverse-button', $inverse-button-font-color, $inverse-button-color)
+check-contrast-ratio('inverse-button-hover', $inverse-button-font-color, $inverse-button-hover-color)
+check-contrast-ratio('inverse-links', $inverse-link-color, $inverse-background)
+check-contrast-ratio('inverse-visited', $inverse-visited-link-color, $inverse-background)

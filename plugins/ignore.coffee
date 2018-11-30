@@ -1,5 +1,4 @@
 _ = require '../node_modules/lodash'
-moment = require '../node_modules/moment-timezone'
 multimatch = require '../node_modules/multimatch'
 now = new Date()
 
