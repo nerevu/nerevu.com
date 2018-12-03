@@ -36,12 +36,10 @@
     "mithril-node-render": "^2.3.1",
     "moment-timezone": "^0.5.23",
     "rimraf": "^2.5.4",
-    "stylus": "^0.54.5",
-    "urijs": "^1.19.1"
+    "stylus": "^0.54.5"
   },
   "devDependencies": {
     "coffeelint": "^1.16.0",
-    "metalsmith-clean": "^0.0.0",
     "metalsmith-fingerprint-ignore": "^1.1.2",
     "metalsmith-html-minifier": "^2.1.0",
     "metalsmith-if": "^0.1.1",

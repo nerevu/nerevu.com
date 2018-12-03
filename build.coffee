@@ -22,10 +22,10 @@ beautify = require './node_modules/metalsmith-beautify'
 mithril = require './node_modules/metalsmith-mithril'
 msIf = require './node_modules/metalsmith-if'
 uglify = require './node_modules/metalsmith-uglify'
+linkcheck = require './node_modules/metalsmith-linkcheck'
 
 end = checkpoint 'require metalsmith plugins', end
 
-blc = require './plugins/blc'
 browserify = require './plugins/browserify'
 cleanCSS = require './plugins/clean-css'
 compress = require './plugins/compress'
@@ -70,8 +70,8 @@ app = new Metalsmith(__dirname)
   .use time plugin: 'fingerprint'
   .use mithril.layouts ext: '.coffee'
   .use time plugin: 'mithril'
-  .use blc warn: true
-  .use time plugin: 'blc'
+  .use msIf not config.serve, linkcheck()
+  .use time plugin: 'linkcheck'
   .use msIf config.prod, cleanCSS
     files: "#{config.paths.css}/main*.css"
     rename: false
