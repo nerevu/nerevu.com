@@ -27,7 +27,7 @@
     "browserify": "^13.1.0",
     "coffeeify": "^2.0.1",
     "coffeescript": "^1.11.0",
-    "jeet": "^6.1.2",
+    "jeet": "^7.2.0",
     "marked": "^0.4.0",
     "metalsmith": "^2.3.0",
     "metalsmith-beautify": "^0.2.0",

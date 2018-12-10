@@ -31,7 +31,7 @@ article
       col(1/2)
       vertically-align()
       text-align center
-      shift(1/4)
+      move(1/4)
       margin-top 0
       margin-bottom 0
 
@@ -40,7 +40,7 @@ article
       vertically-align()
 
     .prev
-      shift(-1/2)
+      move(-1/2)
 
     .next
       text-align right
@@ -51,14 +51,14 @@ article
     @media $mobile
       .updated
         col(1)
-        unshift(1/4)
+        unmove(1/4)
         text-align center
 
       .post-nav
         col(1/2)
 
       .prev
-        unshift(-1/2)
+        unmove(-1/2)
 
       .next
         text-align right
