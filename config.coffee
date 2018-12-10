@@ -42,7 +42,6 @@ module.exports =
   footer:
     privacy: 'Privacy'
     terms: 'Terms'
-    cookies: '🍪'
 
   paths:
     images: 'images'
@@ -55,26 +54,46 @@ module.exports =
 
   laicos:
     facebook:
-      href: '//www.facebook.com/nerevu/'
+      href: '//www.facebook.com/nerevu'
       user: 'nerevu'
       userID: 300084520193307
-      title: 'Facebook'
+      title: 'Nerevu on Facebook'
     github:
       href: '//github.com/nerevu'
       user: 'nerevu'
-      title: 'GitHub'
+      title: 'Nerevu on GitHub'
+      left: -5
+      top: -6
+      width: 42
+      height: 42
     twitter:
       href: '//twitter.com/nerevu'
       user: 'nerevu'
-      title: 'Twitter'
+      title: 'Nerevu on Twitter'
+      left: 3
+      top: 3
+      width: 26
+      height: 26
     linkedin:
       href: '//www.linkedin.com/company/nerevu'
       user: 'nerevu'
-      title: 'LinkedIn'
+      title: 'Nerevu on LinkedIn'
+      left: -7
+      top: -5
+      width: 40
+      height: 40
     rss:
       href: '//feeds.feedburner.com/nerevu'
-      title: 'RSS'
+      title: 'Nerevu RSS feed'
+      left: 56
+      top: 56
+      width: 400
+      height: 400
     envelope:
-      href: '//mailto:info@nerevu.com'
+      href: 'mailto:info@nerevu.com'
       user: 'info@nerevu.com'
-      title: 'RSS'
+      title: 'email Nerevu'
+      left: 0
+      top: 0
+      width: 490
+      height: 490

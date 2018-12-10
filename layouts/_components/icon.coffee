@@ -3,15 +3,20 @@ m = require 'mithril'
 module.exports =
   view: (vnode) ->
     attrs = vnode.attrs
+    left = attrs.left or 0
+    top = attrs.top or 0
+    width = attrs.width or 32
+    height = attrs.height or 32
 
-    options = switch attrs.iconType
-      when 'io' then {el: 'span', class: "oi oi-#{attrs.id}"}
-      when 'fa' then {el: 'span', class: "fa fa-#{attrs.id}"}
-      else {el: 'span', class: "text-primary icon-#{attrs.id}"}
-
-    if attrs.size and attrs.iconType
-      options.class += " #{attrs.iconType}-#{attrs.size}"
-
-    m 'a', {href: attrs.href}, m "#{options.el}[aria-hidden='true']",
-      class: options.class
+    m 'a.laicos-icon', {
+      href: attrs.href
+      target: '_blank'
+      rel: 'noopener noreferrer'
+      alt: attrs.alt or attrs.title
       title: attrs.title
+    },
+      m 'svg.laicos-icon', {
+        preserveaspectratio: 'none'
+        viewbox: "#{left} #{top} #{width} #{height}"
+      },
+        m "use[xlink:href='##{attrs.id}']"

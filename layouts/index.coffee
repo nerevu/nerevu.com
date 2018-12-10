@@ -1,5 +1,6 @@
 m = require 'mithril'
 Base = require './_components/base'
+LaicosIcons = require './_components/laicos-icons'
 
 module.exports =
   ctrl: (file, metalsmith) ->
@@ -12,4 +13,8 @@ module.exports =
     @attrs.content = [m('h1', title), m.trust(file.html)]
     @
 
-  view: (ctrl, file, metalsmith) -> m Base, ctrl.attrs
+  view: (ctrl, file, metalsmith) ->
+    [
+      m Base, ctrl.attrs
+      m LaicosIcons
+    ]
