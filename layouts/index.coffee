@@ -10,7 +10,7 @@ module.exports =
       title = file.title
 
     @attrs = metalsmith._metadata
-    @attrs.content = [m('h1', title), m.trust(file.html)]
+    @attrs.content = [m('h1', m.trust title), m.trust(file.html)]
     @
 
   view: (ctrl, file, metalsmith) ->

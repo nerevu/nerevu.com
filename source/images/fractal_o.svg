@@ -1,0 +1,260 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="825" height="820">
+    <defs>
+        <path d="M937.06-50.84v940h-1024v-940h1024z" id="a"/>
+        <path d="M771.06 387.16l-424-328-24 724 448-396z" id="b"/>
+        <path d="M483.06 343.16l-428-52 140-176 288 228z" id="c"/>
+        <path d="M503.06 347.16l-64 380-196 20 260-400z" id="d"/>
+        <path d="M151.06 951.16l248-552-548 80 300 472z" id="e"/>
+        <path d="M999.06 883.16l-72-396-860 388 932 8z" id="f"/>
+        <path d="M607.06 463.16l392-552-568 464 176 88z" id="g"/>
+        <path d="M923.06-112.84l16 404-1088-316 1072-88z" id="h"/>
+        <path d="M559.06 495.16l-280-280 140 312 140-32z" id="i"/>
+        <path d="M463.06 299.16l104-136-236 104 132 32z" id="j"/>
+        <path d="M-148.94 887.16l76-1000 288 980-364 20z" id="k"/>
+        <path d="M171.06 251.16l-48 196-76-80 124-116z" id="l"/>
+        <path d="M479.06-56.84l456 888-4-912-452 24z" id="m"/>
+        <path d="M535.06 383.16l-56-276 260 236-204 40z" id="n"/>
+        <path d="M683.06 619.16l-260-52 360-180-100 232z" id="o"/>
+        <path d="M155.06 851.16l220-296-28-212-192 508z" id="p"/>
+        <path d="M203.06 747.16l332-188-116 160-216 28z" id="q"/>
+        <path d="M999.06 875.16l-512-388 48 396 464-8z" id="r"/>
+        <path d="M683.06 435.16l-92 80-208-28 300-52z" id="s"/>
+        <path d="M-148.94 55.16l376 180-20-348-356 168z" id="t"/>
+        <path d="M383.06 303.16l-232-24 72-52 160 76z" id="u"/>
+        <path d="M655.06 339.16l-180 92 124 32 56-124z" id="v"/>
+        <path d="M395.06 291.16l92 180-140 272 48-452z" id="w"/>
+        <path d="M363.06 611.16l-192-320 124 12 68 308z" id="x"/>
+        <path d="M183.06 107.16l-128 124 324-136-196 12z" id="y"/>
+        <path d="M599.06 479.16l20 144 20-56-40-88z" id="z"/>
+        <path d="M335.06 875.16l-484-952 92 960 392-8z" id="A"/>
+        <path d="M527.06 571.16l-132 172-36-164 168-8z" id="B"/>
+        <path d="M551.06 283.16l-240 40 68 64 172-104z" id="C"/>
+        <path d="M615.06 559.16l-172 12 44-68 128 56z" id="D"/>
+        <path d="M395.06 311.16l100-156 20 100-120 56z" id="E"/>
+        <path d="M447.06 487.16l-36 252-164-8 200-244z" id="F"/>
+        <path d="M335.06 231.16h-84l112-96-28 96z" id="G"/>
+        <path d="M259.06 275.16l132-92-80 136-52-44z" id="H"/>
+        <path d="M427.06 419.16l104-76-92 8-12 68z" id="I"/>
+        <path d="M143.06 227.16l-176-36 168 100 8-64z" id="J"/>
+        <path d="M599.06 739.16l-116 172-632-164 748-8z" id="K"/>
+        <path d="M683.06 299.16l-4 232-32-108 36-124z" id="L"/>
+        <path d="M111.06 383.16l60 68 8-44-68-24z" id="M"/>
+        <path d="M355.06-112.84l580 16-4 664-576-680z" id="N"/>
+        <path d="M535.06 335.16l-36-40 36-104v144z" id="O"/>
+        <path d="M-148.94-52.84l980-60-868 328-112-268z" id="P"/>
+        <path d="M411.06 231.16l-32-24-20 116 52-92z" id="Q"/>
+        <path d="M399.06 215.16l-84-112 60 12 24 100z" id="R"/>
+        <path d="M191.06 279.16l-88 84 52-136 36 52z" id="S"/>
+        <path d="M207.06 287.16l-28 560 208-384-180-176z" id="T"/>
+        <path d="M587.06 499.16l16 372-264-36 248-336z" id="U"/>
+        <path d="M679.06 579.16l-80-28-48 56 128-28z" id="V"/>
+        <path d="M419.06 203.16l112-112-152 84 40 28z" id="W"/>
+        <path d="M183.06 255.16l48-80-52-40 4 120z" id="X"/>
+        <path d="M539.06 255.16l52 72-56-16 4-56z" id="Y"/>
+        <path d="M519.06 207.16l-64-72 124 76-60-4z" id="Z"/>
+        <path d="M619.06 503.16l40-60-232 44 192 16z" id="aa"/>
+        <path d="M519.06 99.16l28 140 224 152-252-292z" id="ab"/>
+        <path d="M927.06 315.16l-480 568 488-24-8-544z" id="ac"/>
+        <path d="M743.06 519.16l-8-32-64-8 72 40z" id="ad"/>
+        <path d="M311.06 151.16l-20-12-28 48 48-36z" id="ae"/>
+        <path d="M95.06 439.16l12-288-72 176 60 112z" id="af"/>
+        <path d="M655.06 471.16l20 104-56-48 36-56z" id="ag"/>
+        <path d="M651.06 311.16l-64 44-48-16 112-28z" id="ah"/>
+        <path d="M659.06 355.16l-12 68-156-12 168-56z" id="ai"/>
+        <path d="M251.06 171.16v100l-80 28 80-128z" id="aj"/>
+        <path d="M683.06 475.16l-4-68 64 72-60-4z" id="ak"/>
+        <path d="M479.06 535.16l-112 56 28-324 84 268z" id="al"/>
+    </defs>
+    <use xlink:href="#a" fill="#FAFAFA" fill-opacity=".4"/>
+    <use xlink:href="#a" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#b" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#b" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#c" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#c" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#d" fill="#FAFAFA" fill-opacity=".2"/>
+    <use xlink:href="#d" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#e" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#e" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#f" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#f" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#g" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#g" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#h" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#h" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#i" fill="#FAFAFA" fill-opacity=".2"/>
+    <use xlink:href="#i" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#j" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#j" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#k" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#k" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#l" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#l" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#m" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#m" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#n" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#n" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#o" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#o" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#p" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#p" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#q" fill="#FAFAFA" fill-opacity=".2"/>
+    <use xlink:href="#q" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#r" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#r" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#s" fill="#FAFAFA" fill-opacity=".2"/>
+    <use xlink:href="#s" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#t" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#t" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#u" fill="#FAFAFA" fill-opacity=".2"/>
+    <use xlink:href="#u" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#v" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#v" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#w" fill="#FAFAFA" fill-opacity=".2"/>
+    <use xlink:href="#w" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#x" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#x" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#y" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#y" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#z" fill="#FAFAFA" fill-opacity=".2"/>
+    <use xlink:href="#z" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#A" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#A" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#B" fill="#FAFAFA" fill-opacity=".2"/>
+    <use xlink:href="#B" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#C" fill="#FAFAFA" fill-opacity=".2"/>
+    <use xlink:href="#C" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#D" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#D" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#E" fill="#FAFAFA" fill-opacity=".3"/>
+    <use xlink:href="#E" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <use xlink:href="#F" fill="#FAFAFA" fill-opacity=".2"/>
+    <use xlink:href="#F" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    <g>
+        <use xlink:href="#G" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#G" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#H" fill="#FAFAFA" fill-opacity=".2"/>
+        <use xlink:href="#H" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#I" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#I" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#J" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#J" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#K" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#K" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#L" fill="#FAFAFA" fill-opacity=".2"/>
+        <use xlink:href="#L" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#M" fill="#FAFAFA" fill-opacity=".2"/>
+        <use xlink:href="#M" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#N" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#N" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#O" fill="#FAFAFA" fill-opacity=".2"/>
+        <use xlink:href="#O" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#P" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#P" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#Q" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#Q" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#R" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#R" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#S" fill="#FAFAFA" fill-opacity=".2"/>
+        <use xlink:href="#S" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#T" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#T" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#U" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#U" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#V" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#V" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#W" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#W" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#X" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#X" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#Y" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#Y" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#Z" fill="#FAFAFA" fill-opacity=".2"/>
+        <use xlink:href="#Z" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#aa" fill="#FAFAFA" fill-opacity=".2"/>
+        <use xlink:href="#aa" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#ab" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#ab" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#ac" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#ac" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#ad" fill="#FAFAFA" fill-opacity=".2"/>
+        <use xlink:href="#ad" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#ae" fill="#FAFAFA" fill-opacity=".2"/>
+        <use xlink:href="#ae" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#af" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#af" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#ag" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#ag" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#ah" fill="#FAFAFA" fill-opacity=".2"/>
+        <use xlink:href="#ah" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#ai" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#ai" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#aj" fill="#FAFAFA" fill-opacity=".2"/>
+        <use xlink:href="#aj" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#ak" fill="#FAFAFA" fill-opacity=".3"/>
+        <use xlink:href="#ak" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+    <g>
+        <use xlink:href="#al" fill="#FAFAFA" fill-opacity=".2"/>
+        <use xlink:href="#al" fill-opacity="0" stroke="#FAFAFA" stroke-opacity="0"/>
+    </g>
+</svg>

@@ -11,7 +11,7 @@ module.exports =
         m 'span.copy center centered', [
           m.trust "&copy; #{year}"
           m.trust '&nbsp'
-          m 'a', {href: attrs.site.url}, "#{attrs.site.name}"
+          m 'a', {href: attrs.site.url}, "#{attrs.site.title}"
           m.trust '.&nbsp'
           'All rights reserved.'
         ]

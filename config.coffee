@@ -38,10 +38,7 @@ module.exports =
     description: "Nerevu Group is a data driven holding company with operations in the software, technology, financial services, real estate, and investment sectors."
     tags: tags
     keywords: tags.join ', '
-
-  footer:
-    privacy: 'Privacy'
-    terms: 'Terms'
+    logo: 'nerevu-logo.png'
 
   paths:
     images: 'images'
@@ -97,3 +94,76 @@ module.exports =
       top: 0
       width: 490
       height: 490
+    # angellist:
+    #   left: -6
+    #   top: -7
+    #   width: 67
+    #   height: 67
+
+  sections: [
+    {
+      title: 'Divisions'
+      id: 'divisions'
+      items: [
+        {
+          id: 'nerevu-analytics'
+          name: 'Nerevu Analytics'
+          logo: 'images/nerevu-analytics-logo.png'
+          href: '//analytics.nerevu.com'
+          content: 'Nerevu Analytics is a data driven advisory and development firm that helps organizations reach and retain their ideal customers.'
+        }, {
+          id: 'nerevu-labs'
+          name: 'Nerevu Labs'
+          logo: 'images/nerevu-labs-logo.png'
+          href: '//labs.nerevu.com'
+          content: 'Nerevu Labs develops single page app (SPA) prototypes and minimum viable products (MVPs) for startups and internal Nerevu projects.'
+        }
+      ]
+    }
+    {
+      title: 'Team'
+      id: 'team'
+      items: [
+        {
+          name: 'Reuben Cummings'
+          photo: 'images/reuben.jpg'
+          position: 'Founder and President'
+          linkedin: 'reubano'
+          content: 'Reuben is a data guru who is obsessed with transforming data and extracting meaningful information from it. A Peoria native, open source contributor, and international speaker, Reuben helps organizations turn their data into actionable insights.'
+        }, {
+          name: 'Kevin Evans'
+          photo: 'images/kevin.jpg'
+          position: 'Advisor'
+          linkedin: 'kevin-evans-3232146b'
+          content: 'Kevin is Director of the Illinois Small Business Development Center (SBDC) and has over 25 years experience in small business and entrepreneurship.'
+        }, {
+          name: 'Andy Fograscher'
+          photo: 'images/andy.jpg'
+          position: 'Advisor'
+          linkedin: 'andyfograscher'
+          content: 'Andy is President of Stellar Systems, and has over 30 years experience in accounting and information technology.'
+        }, {
+          name: 'Lee Maki'
+          photo: 'images/lee.jpg'
+          position: 'Advisor'
+          linkedin: 'lee-maki-606026118'
+          content: 'Lee Maki has over 30 years experience in ???'
+        }
+      ]
+    }
+    {
+      title: 'Contact'
+      id: 'contact'
+      name: 'Nerevu Group'
+      email: 'info@nerevu.com'
+      address:
+        lines: ['820 SW Adams St.', 'Suite C']
+        city: 'Peoria'
+        state: 'IL'
+        country: 'USA'
+        zip: 61602
+      phone: '+1 (234) 738-2266'
+      key: process.env.GOOGLE_API_KEY
+      place: 'nest%20coworking%20peoria'
+    }
+  ]

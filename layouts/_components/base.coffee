@@ -3,6 +3,7 @@ SiteMeta = require './site-meta'
 LaicosMeta = require './laicos-meta'
 Navbar = require './navbar'
 Main = require './main'
+Section = require './section'
 Footer = require './footer'
 
 module.exports =
@@ -27,8 +28,10 @@ module.exports =
         m 'body', [
           m '#container', [
             m Navbar, attrs
-            m '#sectionList', [
+            m '#sectionList.parallax', [
               m Main, attrs
+              attrs.sections.map (section, pos) ->
+                m Section, Object.assign {inverse: pos % 2}, section
               m Footer, attrs
             ]
           ]
