@@ -1,13 +1,15 @@
-@require '../_colors/material'
+@require '../_colors/material-base'
 
-$base-color = $red-lighten-1
-$lite-base-color = $red-lighten-4
-$dark-base-color = darken($red-darken-4, 60%)
+// https://material.io/tools/color
 
-$accent = $red-accent-2
-$lite-accent = lighten($red-accent-1, 60%)
-$med-accent = $red-accent-4
-$dark-accent = darken($red-accent-4, 40%)
+$base-color = #c62828
+$lite-base-color = #ff5f52
+$dark-base-color = #8e0000
+
+$accent = #00838f
+$lite-accent = #4fb3bf
+$dark-accent = #005662
+$accent-is-dark = true
 
 $base-alpha = alpha($base-color, 2%)
 $base-white = blend($base-alpha, $white)

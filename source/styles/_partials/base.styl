@@ -143,7 +143,7 @@ h1 a, h2 a, h4 a, p a, li a, span a, figcaption a, a.link, a.anchor, address a
 
   .inverse &
     reset-link()
-    link($link-color, 'lighten')
+    link($inverse-link-color, 'lighten')
 
 nav a:visited
   color $nav-link-color
@@ -165,7 +165,8 @@ nav a.active
   content '#'
 
 .anchor
-  margin-right 10px
+  padding-right 10px
+  margin-left -27px
   display none
 
 a:visited
@@ -232,10 +233,7 @@ img
     min-width 2em
     border-radius 20px
 
-    @media $mobile
-      max-width 100%
-
-    @media $tablet
+    @media $handheld
       max-width 50%
 
   &.cover
@@ -264,12 +262,12 @@ section
 
   &.alt
     color $alt-font-color
-    background alpha($alt-background, 0.2)
+    background alpha($alt-background, 0.8)
     text-shadow 2px 2px 2em $alt-background
 
   &.inverse
     color $inverse-font-color
-    background alpha($inverse-background, 0.2)
+    background alpha($inverse-background, 0.8)
     text-shadow 2px 2px 2em $inverse-background
 
 .one
@@ -284,6 +282,10 @@ section
     @media $mobile
       stack()
 
+  &.stack-tablet
+    @media $tablet
+      stack()
+
 .third
   column(1/3)
 
@@ -291,6 +293,10 @@ section
     column(1/3, $cycle: 3)
 
     @media $mobile
+      stack()
+
+  &.stack-tablet
+    @media $tablet
       stack()
 
 .fourth
@@ -302,6 +308,10 @@ section
     @media $mobile
       stack()
 
+  &.stack-tablet
+    @media $tablet
+      stack()
+
 .two-thirds
   column(2/3)
 
@@ -310,12 +320,20 @@ section
       column(1)
       stack()
 
+  &.stack-tablet
+    @media $tablet
+      stack()
+
 .three-fourths
   column(3/4)
 
   &.stack
     @media $mobile
       column(1)
+      stack()
+
+  &.stack-tablet
+    @media $tablet
       stack()
 
 #container
@@ -355,6 +373,17 @@ figure, .figure
 
 .mobile-center
   @media $mobile
+    text-align center !important
+
+.tablet-center
+  @media $tablet
+    text-align center !important
+
+.handheld-center
+  @media $mobile
+    text-align center !important
+
+  @media $tablet
     text-align center !important
 
 .inline-list

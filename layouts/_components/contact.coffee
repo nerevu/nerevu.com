@@ -17,13 +17,13 @@ module.exports =
     attrs = vnode.attrs
 
     [
-      m 'address.vcard component fourth stack mobile-center', [
+      m 'address.vcard component fourth stack stack-tablet handheld-center', [
         m 'bold.org', attrs.name
         m '.adr', [
           attrs.address.lines.map (line) ->
-            m '.street-address non-mobile', line
+            m '.street-address non-tablet', line
 
-          m 'span.street-address mobile', attrs.address.lines.map (line, pos) ->
+          m 'span.street-address tablet', attrs.address.lines.map (line, pos) ->
             "#{if pos then ' | ' else ''}#{line}"
 
           m 'span.locality', "#{attrs.address.city}, "
@@ -39,7 +39,7 @@ module.exports =
         m 'a.tel', {href: "tel:#{attrs.phone}"}, attrs.phone
       ]
 
-      m 'a.three-fourths stack', {href: "//www.google.com/maps/place?q=#{attrs.place}"},
+      m 'a.three-fourths stack stack-tablet', {href: "//www.google.com/maps/place?q=#{attrs.place}"},
         m 'img.cover fit', {
           src: "#{attrs.photoName}.#{attrs.photoExt}"
           sizes: '(min-width: 640px) 67vw, 100vw'
