@@ -3,7 +3,7 @@
     nav(8, $nav-background, $nav-link-color)
 
   background $nav-background
-  height 75px !important
+  height auto !important
   overflow hidden
 
   h1
@@ -16,10 +16,14 @@
   img
     margin $burger-spacing 0
 
+    @media $mobile
+      width 180px
+      margin 1em 0
+
 #mobile-navbar
-  h1
+  a
     float left
-    line-height $hamburger-button-height
+    line-height 0
     padding 0
 
   .mobile-nav

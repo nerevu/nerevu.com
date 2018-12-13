@@ -8,13 +8,12 @@ module.exports =
     _class = switch teamSize
       when 1 then 'one'
       when 2 then 'half'
-      when 3 then 'third'
-      when not teamSize % 3 then 'third stack'
-      else 'half stack'
+      when not teamSize % 3 then 'third'
+      else 'half'
 
     m '.component',
       attrs.items.map (item) ->
-        m ".#{_class}", [
+        m ".person stack #{_class}", [
           m 'a', {href: "//www.linkedin.com/in/#{item.linkedin}"},
             m 'img.left headshot', {
               src: item.photo

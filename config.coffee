@@ -46,7 +46,7 @@ module.exports =
     js: 'scripts'
     source: 'source'
     dest: 'public'
-    rss: '/feed.xml'
+    # rss: '/feed.xml'
     optimize: '//res.cloudinary.com/nerevu/image/fetch/f_auto,q_auto'
 
   laicos:
@@ -79,13 +79,13 @@ module.exports =
       top: -5
       width: 40
       height: 40
-    rss:
-      href: '//feeds.feedburner.com/nerevu'
-      title: 'Nerevu RSS feed'
-      left: 56
-      top: 56
-      width: 400
-      height: 400
+    # rss:
+    #   href: '//feeds.feedburner.com/nerevu'
+    #   title: 'Nerevu RSS feed'
+    #   left: 56
+    #   top: 56
+    #   width: 400
+    #   height: 400
     envelope:
       href: 'mailto:info@nerevu.com'
       user: 'info@nerevu.com'
@@ -156,14 +156,15 @@ module.exports =
       id: 'contact'
       name: 'Nerevu Group'
       email: 'info@nerevu.com'
+      photoExt: 'png'
+      photoName: 'images/map'
       address:
-        lines: ['820 SW Adams St.', 'Suite C']
+        lines: ['The Nest Coworking', '820 SW Adams St.', 'Suite C']
         city: 'Peoria'
         state: 'IL'
         country: 'USA'
         zip: 61602
       phone: '+1 (234) 738-2266'
-      key: process.env.GOOGLE_API_KEY
       place: 'nest%20coworking%20peoria'
     }
   ]

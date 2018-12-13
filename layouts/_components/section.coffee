@@ -9,6 +9,14 @@ module.exports =
       class: if attrs.inverse then 'inverse' else ''
     },
       m '.container', [
-        m 'h2.center', attrs.title
+        m 'h2.center heading', [
+          m 'a.anchor', {
+            title: attrs.title
+            href: attrs.href or "/##{attrs.id}"
+            'aria-hidden': true
+          }
+          attrs.title
+        ]
         m Component, attrs
       ]
+

@@ -17,10 +17,10 @@ module.exports =
         m Brand, Object.assign {class: 'non-handheld'}, attrs
         m 'ul.nav-list', [
           attrs.sections?.map (section) ->
-            m 'li', m 'a',
+            m 'li', m 'a', {
               class: if attrs.section?.id is section.id then 'active' else ''
               href: section.href or "/##{section.id}"
-            ,
+            },
               section.title
         ]
       ]

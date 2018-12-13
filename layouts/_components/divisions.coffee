@@ -7,13 +7,12 @@ module.exports =
     _class = switch companySize
       when 1 then 'one'
       when 2 then 'half'
-      when 3 then 'third'
-      when not companySize % 3 then 'third stack'
-      else 'half stack'
+      when not companySize % 3 then 'third'
+      else 'half'
 
     m '.component',
       attrs.items.map (item) ->
-        m "figure.#{_class}", [
+        m "figure.stack #{_class}", [
           m 'a', {href: item.href},
             m 'img.logo', {
               src: item.logo

@@ -52,6 +52,9 @@ h1, h2, h3, h4, h5, h6, p
 h1, h2, h3
   padding-top $half-headspace
 
+address
+  margin-top $quarter-headspace
+
 html, body
   @media screen
     height 100%
@@ -162,7 +165,7 @@ nav a.active
   content '#'
 
 .anchor
-  margin-left 10px
+  margin-right 10px
   display none
 
 a:visited
@@ -216,15 +219,24 @@ dt
 img
   margin $half-headspace 0
 
+  figure &
+    margin 0
+
   &.fit
-    col 1
+    column(1)
     max-width 100%
 
   &.headshot
-    margin $half-headspace $half-headspace $quarter-headspace 0
+    margin 0 $full-gutter $quarter-headspace 0
     max-width 25%
     min-width 2em
     border-radius 20px
+
+    @media $mobile
+      max-width 100%
+
+    @media $tablet
+      max-width 50%
 
   &.cover
     object-fit cover
@@ -293,8 +305,18 @@ section
 .two-thirds
   column(2/3)
 
+  &.stack
+    @media $mobile
+      column(1)
+      stack()
+
 .three-fourths
   column(3/4)
+
+  &.stack
+    @media $mobile
+      column(1)
+      stack()
 
 #container
   height 100%
@@ -306,6 +328,7 @@ section
 
 figure, .figure
   figure($border-color, 300)
+  margin $quarter-headspace 0
 
 .half-width
   max-width 50%
@@ -328,13 +351,17 @@ figure, .figure
   icon-arrow($color: $divider-color)
 
 .center
-  text-align center
+  text-align center !important
+
+.mobile-center
+  @media $mobile
+    text-align center !important
 
 .inline-list
   inline-list()
 
 .centered
-  center(50%)
+  center(100%)
 
 .bordered-list
   ol('none')
