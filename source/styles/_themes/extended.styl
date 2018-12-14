@@ -16,7 +16,11 @@ $visited-link-color = $dark-accent
 // nav theme color
 $nav-background = $dark-base-color
 $nav-link-color = $base-white
-$nav-active-color = $base-offwhite
+
+if $lite-accent-is-dark
+  $nav-active-color = $base-offwhite
+else
+  $nav-active-color = $lite-accent
 
 // universal
 $text-selection-color = $dark-accent
@@ -50,10 +54,14 @@ $inverse-button-hover-color = $inverse-button-border-color
 $inverse-button-hover-font-color = $inverse-button-color
 $inverse-border-color = alpha($base-offwhite, $transparency)
 
-if $accent-is-dark
+if $lite-accent-is-dark
   $inverse-link-color = mix($lite-base-color, $inverse-font-color, 20%)
   $inverse-visited-link-color = $inverse-link-color
 else
   $inverse-link-color = $lite-accent
-  $inverse-visited-link-color = $accent
+
+  if $accent-is-dark
+    $inverse-visited-link-color = $inverse-link-color
+  else
+    $inverse-visited-link-color = $accent
 
