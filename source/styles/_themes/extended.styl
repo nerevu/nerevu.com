@@ -51,8 +51,8 @@ $inverse-button-hover-font-color = $inverse-button-color
 $inverse-border-color = alpha($base-offwhite, $transparency)
 
 if $accent-is-dark
-  $inverse-link-color = $base-white
-  $inverse-visited-link-color = $base-offwhite
+  $inverse-link-color = mix($lite-base-color, $inverse-font-color, 20%)
+  $inverse-visited-link-color = $inverse-link-color
 else
   $inverse-link-color = $lite-accent
   $inverse-visited-link-color = $accent
