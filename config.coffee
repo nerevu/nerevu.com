@@ -35,7 +35,7 @@ module.exports =
     title: 'Nerevu Group, LLC'
     url: URLS[process.env.SITE]
     version: '0.1.0'
-    description: "Nerevu Group is a data driven holding company with operations in the software, technology, financial services, real estate, and investment sectors."
+    description: "Nerevu Group is a data driven holding company with divisions in the advisory, software, financial services, real estate, and investment sectors."
     tags: tags
     keywords: tags.join ', '
     logo: 'nerevu-logo.png'
