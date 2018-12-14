@@ -129,7 +129,7 @@ module.exports =
           photo: 'images/reuben.jpg'
           position: 'Founder and President'
           linkedin: 'reubano'
-          content: 'Reuben is a data guru who is obsessed with transforming data and extracting meaningful information from it. A Peoria native, open source contributor, and international speaker, Reuben helps organizations turn their data into actionable insights.'
+          content: 'Reuben is an MIT educated data guru who is obsessed with extracting meaningful information from diverse data sources. A Peoria native, open source contributor, and international speaker, Reuben helps organizations turn their business metrics into actionable insights.'
         }, {
           name: 'Kevin Evans'
           photo: 'images/kevin.jpg'
