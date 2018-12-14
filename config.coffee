@@ -135,7 +135,7 @@ module.exports =
           photo: 'images/kevin.jpg'
           position: 'Advisor'
           linkedin: 'kevin-evans-3232146b'
-          content: 'Kevin is Director of the Illinois Small Business Development Center (SBDC) and has over 25 years experience in small business and entrepreneurship.'
+          content: 'Kevin is Director of the Illinois Small Business Development Center (SBDC) at Bradley, and a VentureWell certified LeanLaunchPad Educator. Kevin also holds certifications from the Illinois Entrepreneurship Network and the Illinois Department of Commerce and Economic Opportunity as a Business Development Advisor.'
         }, {
           name: 'Andy Fograscher'
           photo: 'images/andy.jpg'
