@@ -7,3 +7,4 @@ public
 *.gz
 !favicon.ico.gz
 data/*.md
+source/*links*.json
