@@ -1,5 +1,5 @@
 {
-  "name": "nerevu-group",
+  "name": "nerevu",
   "version": "0.27.1",
   "license": "MIT",
   "description": "Nerevu Group website",
@@ -16,9 +16,10 @@
   },
   "scripts": {
     "clean": "rimraf README.md source plugins layouts data package.json *.coffee",
-    "build": "SITE=$npm_package_config_site SERVE=$npm_package_config_serve coffee build.coffee --nerevu:serve=false",
     "start": "SITE=$npm_package_config_site SERVE=$npm_package_config_serve coffee build.coffee",
-    "build:netlify": "NODE_ENV=production npm run start --nerevu:site=netlify --nerevu:serve=false",
+    "start:prod": "NODE_ENV=production npm start",
+    "build": "npm start --nerevu:serve=false",
+    "build:netlify": "NODE_ENV=production npm run start --nerevu:serve=false --nerevu:site=netlify",
     "lint": "coffeelint **/*.coffee *.coffee",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
