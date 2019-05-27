@@ -28,7 +28,7 @@
     "coffeeify": "^2.0.1",
     "coffeescript": "^1.11.0",
     "jeet": "^7.2.0",
-    "marked": "^0.4.0",
+    "marked": "^0.6.2",
     "metalsmith": "^2.3.0",
     "metalsmith-beautify": "^0.2.0",
     "metalsmith-mithril": "^0.2.3",
@@ -48,6 +48,6 @@
     "metalsmith-start": "^2.0.1",
     "metalsmith-uglify": "^2.2.0",
     "multimatch": "^2.1.0",
-    "watchify": "^3.11.0"
+    "watchify": "^3.11.1"
   }
 }
