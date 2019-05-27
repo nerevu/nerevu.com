@@ -5,7 +5,7 @@
   "description": "Nerevu Group website",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nerevu/www.nerevu.com"
+    "url": "https://github.com/nerevu/nerevu.com"
   },
   "engines": {
     "node": ">=8.7.0,<0.0.0"
