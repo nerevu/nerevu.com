@@ -1,14 +1,11 @@
 path = require 'path'
-# hljs = require '../node_modules/highlight.js'
+helpers = require '../helpers'
 marked = require '../node_modules/marked'
-_ = require '../node_modules/lodash'
 
 renderer = new marked.Renderer()
 
-slug = (text) ->
-  text = text?.trim() or ''
-  text.replace(/\W+/g, '-').replace(/[\-]+/g, '-')
-  text
+_ = helpers._
+slug = helpers.slug
 
 # add an embedded anchor tag like on GitHub
 renderer.heading = (text, level) ->
@@ -18,14 +15,12 @@ renderer.heading = (text, level) ->
 DEFAULTS =
   renderer: renderer
   smartypants: true
-  # highlight: (code, lang) -> hljs.highlight(lang, code).value
 
 markdown = (file) -> /\.md|\.markdown/.test(path.extname(file))
 
 module.exports = (options) ->
   options = options or {}
-  # opts = _.defaults options, DEFAULTS
-  opts = {}
+  opts = _.defaults options, DEFAULTS
   keys = options.keys or []
 
   (files, metalsmith, done) ->

@@ -1,0 +1,119 @@
+.meta
+  padding-top $quarter-headspace
+  border-top $border-weight dashed $border-color
+  margin-bottom $half-headspace
+
+article
+  h1
+    margin 0
+
+  .meta
+    padding $quarter-headspace $quarter-gutter
+    margin $half-headspace 0
+    border $border-weight solid $border-color
+    border-radius $border-radius
+    background $alt-background
+    text-align center
+    ul:first-child
+      bold()
+
+    li
+      overflow hidden
+      text-overflow ellipsis
+    li:not(:last-child)
+      border-right $border-weight solid $border-color
+
+  footer
+    padding $full-headspace 0 0
+    border-top $border-weight solid $border-color
+    margin-top $half-headspace
+
+    .updated
+      column(1/2)
+      vertically-align()
+      text-align center
+      move(1/4)
+      margin-top 0
+      margin-bottom 0
+
+    .post-nav
+      column(1/4)
+      vertically-align()
+
+    .prev
+      move(-1/2)
+
+    .next
+      text-align right
+
+    @media print
+      display none
+
+    @media $mobile
+      .updated
+        column(1)
+        unmove(1/4)
+        text-align center
+
+      .post-nav
+        column(1/2)
+
+      .prev
+        unmove(-1/2)
+
+      .next
+        text-align right
+
+    .empty
+      color: $background
+
+    a
+      link($link-color, 'glow')
+
+#sectionList
+  width 100%
+  min-height 100%
+  background url('../images/fractal_o.svg')
+  background-size cover
+
+  // don't forget to add mobile stylings
+  &.parallax
+    background-attachment fixed
+    background-position center
+    background-repeat no-repeat
+
+#divisions
+  figcaption
+    text-align: left
+
+  img
+    border none
+
+    @media $mobile
+      margin 0
+
+#team
+  .name
+    margin 0
+
+  .position
+    margin-top 0
+
+  .person
+    margin $quarter-headspace 0
+
+.copy
+  padding-top $half-headspace
+
+.laicos-list
+  padding-top $full-headspace
+
+  @media $tablet
+    margin-left -25px
+
+  @media $laptop
+    margin-left -25px
+
+  li
+    float none
+    display inline-block

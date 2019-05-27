@@ -5,8 +5,11 @@ module.exports = (options) ->
   options.destFolder ?= 'scripts'
   options.dest ?= 'bundle.js'
   options.transforms ?= ['coffeeify']
+  options.plugin ?= []
   options.ignore ?= []
   options.extensions ?= ['.js', '.coffee']
+  options.cache ?= {}
+  options.packageCache ?= {}
 
   for transform, i in options.transforms
     options.transforms[i] = require transform

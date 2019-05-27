@@ -1,4 +1,5 @@
 path = require 'path'
+helpers = require './helpers'
 
 stamp = Date.now()
 
@@ -8,7 +9,6 @@ checkpoint = (name, start) ->
   console.log("#{name} +#{time}s")
   end
 
-_ = require './node_modules/lodash'
 axis = require './node_modules/axis'
 jeet = require './node_modules/jeet'
 Metalsmith = require './node_modules/metalsmith'
@@ -18,20 +18,20 @@ end = checkpoint 'require base', stamp
 
 fingerprint = require './node_modules/metalsmith-fingerprint-ignore'
 htmlMinifier = require './node_modules/metalsmith-html-minifier'
+beautify = require './node_modules/metalsmith-beautify'
 mithril = require './node_modules/metalsmith-mithril'
 msIf = require './node_modules/metalsmith-if'
 uglify = require './node_modules/metalsmith-uglify'
+linkcheck = require './node_modules/metalsmith-linkcheck'
 
 end = checkpoint 'require metalsmith plugins', end
 
-blc = require './plugins/blc'
 browserify = require './plugins/browserify'
 cleanCSS = require './plugins/clean-css'
 compress = require './plugins/compress'
 ignore = require './plugins/ignore'
 markdown = require './plugins/markdown'
 preempt = require './plugins/preempt'
-serve = require './plugins/serve'
 stylus = require './plugins/stylus'
 time = require './plugins/time'
 end = checkpoint 'require local plugins', end
@@ -39,12 +39,13 @@ end = checkpoint 'require local plugins', end
 config = require './config'
 js = config.paths.js
 
-end = checkpoint 'require rest', end
-
 end = checkpoint 'set config', end
-DIR = __dirname
 
-app = new Metalsmith(DIR)
+_ = helpers._
+
+Runner = require('./node_modules/metalsmith-start').Runner
+
+app = new Metalsmith(__dirname)
   .use time plugin: 'start', start: end
   .source config.paths.source
   .destination config.paths.dest
@@ -60,14 +61,17 @@ app = new Metalsmith(DIR)
     compress: false
     use: [axis(), jeet()]
   .use time plugin: 'stylus'
-  .use browserify destFolder: js
+  .use browserify
+    destFolder: js
+    plugin: if config.prod then [] else ['watchify']
+    debug: not config.prod
   .use time plugin: 'browserify'
   .use fingerprint pattern: ['**/*.css', '**/*.js']
   .use time plugin: 'fingerprint'
-  .use mithril ext: '.coffee', concurrent: 2
+  .use mithril.layouts ext: '.coffee'
   .use time plugin: 'mithril'
-  .use blc warn: true
-  .use time plugin: 'blc'
+  .use msIf not config.serve, linkcheck()
+  .use time plugin: 'linkcheck'
   .use msIf config.prod, cleanCSS
     files: "#{config.paths.css}/main*.css"
     rename: false
@@ -78,6 +82,8 @@ app = new Metalsmith(DIR)
   .use msIf config.prod, time plugin: 'uglify'
   .use msIf config.prod, htmlMinifier()
   .use msIf config.prod, time plugin: 'htmlMinifier'
+  .use msIf not config.prod, beautify()
+  .use msIf not config.prod, time plugin: 'beautify'
   .use msIf config.prod, compress overwrite: false
   .use msIf config.prod, time plugin: 'compress'
 
@@ -108,10 +114,8 @@ build = (clean) ->
   else
     app.process afterProcess
 
-build true
-
-app
-  .use msIf config.serve, serve
-    gzip: true
-
-  .use msIf config.serve, time plugin: 'serve'
+if config.serve
+  r = new Runner(app)
+  r.start()
+else
+  build true

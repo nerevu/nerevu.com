@@ -1,0 +1,51 @@
+#laicosIcons svg
+  position absolute
+  margin-left -100%
+
+footer
+  height auto
+  overflow auto
+  padding $full-headspace $half-gutter
+  background-color $background
+  color $font-color
+  position relative
+  z-index 10
+
+  .laicos-links, .copyright
+    @media $laptop
+      column(1/2)
+    @media $hd
+      column(1/2)
+
+  .laicos-links
+    margin 0 auto !important
+
+ svg.laicos-icon
+    display table-cell
+    width $icon-width
+    height @width
+    float left
+    fill $font-color
+
+  svg.laicos-icon:hover
+    fill $link-color
+
+footer.alt
+  background-color $alt-background
+  color $alt-font-color
+
+  svg.laicos-icon
+    fill $alt-font-color
+
+  svg.laicos-icon:hover
+    fill $alt-link-color
+
+footer.inverse
+  background-color $inverse-background
+  color $inverse-font-color
+
+  svg.laicos-icon
+    fill $inverse-font-color
+
+  svg.laicos-icon:hover
+    fill $inverse-link-color

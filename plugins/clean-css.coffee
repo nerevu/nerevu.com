@@ -1,6 +1,5 @@
 CleanCSS = require '../node_modules/clean-css'
 async = require '../node_modules/async'
-moment = require '../node_modules/moment-timezone'
 multimatch = require '../node_modules/multimatch'
 _ = require '../node_modules/lodash'
 
