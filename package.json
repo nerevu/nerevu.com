@@ -32,7 +32,7 @@
     "metalsmith": "^2.3.0",
     "metalsmith-beautify": "^0.2.0",
     "metalsmith-mithril": "^0.2.3",
-    "mithril": "^1.1.6",
+    "mithril": "^1.1.7",
     "mithril-node-render": "^2.3.1",
     "moment-timezone": "^0.5.23",
     "rimraf": "^2.5.4",
